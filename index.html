@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Fronttera</title>
     <link rel="stylesheet" href="Inicio.css">
-    <script src="Inicio.js"></script>
+
+    
+
 </head>
 <header>
     <div class="logo">
@@ -20,7 +23,7 @@
     </nav>
 </header>
 <body>
-    
+
         <div class="parte-inicial">
             <h5>Salesforce Consultant</h5>
             <h1>Descubre el <br>ecocistema que te <br>llevará al siguiente <br>nivel</h1>
@@ -72,42 +75,29 @@
                 <a href="#"><button class="boton-tarjeta">Ver más</button></a>
             </div>
         </div>
-        <div class="clientes">
+        <div class="clientes swiper">
             <h2>Lo que dicen sobre nosotros</h2>
-            <p>Entérate de cómo nuestro acompañamiento tecnológico ha dejado una impresión
-                duradera en<br> aquellos con quienes hemos tenido el privilegio de trabajar.
-            </p>
-            <div class="imagen-clientes">
-                <div class="primer-comentario">
+            <p>Entérate de cómo nuestro acompañamiento tecnológico ha dejado una impresión duradera en aquellos con quienes hemos tenido el privilegio de trabajar.</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="imagenes/Picture1.png" alt="cliente">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Amet ipsam necessitatibus, aperiam assumenda reiciendis architecto 
-                        accusamus vel quae dolor voluptatem vero laudantium nemo.
-                    </p>
                 </div>
-                <div class="primer-comentario">
+                <div class="swiper-slide">
                     <img src="imagenes/Picture2.png" alt="cliente">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Amet ipsam necessitatibus, aperiam assumenda reiciendis architecto 
-                        accusamus vel quae dolor voluptatem vero laudantium nemo.
-                    </p>
                 </div>
-                <div class="primer-comentario img-3">
+                <div class="swiper-slide">
                     <img src="imagenes/Picture2.png" alt="cliente">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Amet ipsam necessitatibus, aperiam assumenda reiciendis architecto 
-                        accusamus vel quae dolor voluptatem vero laudantium nemo.
-                    </p>
                 </div>
-                <div class="primer-comentario">
+                <div class="swiper-slide">
                     <img src="imagenes/Picture1.png" alt="cliente">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Amet ipsam necessitatibus, aperiam assumenda reiciendis architecto 
-                        accusamus vel quae dolor voluptatem vero laudantium nemo.
-                    </p>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+            
         </div>
+        
+        
+        
         
         <div class="contactanos">
             <div class="contactanos-texto">
@@ -132,5 +122,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Inicio.js"></script>
+
 </body>
 </html>

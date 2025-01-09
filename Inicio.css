@@ -100,10 +100,19 @@ header{
 }
 nav a{
     padding-right: 20px;
-    color: #002060;
+    color: black;
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'avenir_next_lt_proregular';
     font-weight: 200;
+    text-decoration: none;
+}
+nav a:active{
+    color: #002060;
+}
+
+nav a:hover {
+    color:  #00B0F0;
+
 }
 .parte-inicial{
     padding: 160px 0 0 200px;
@@ -207,14 +216,19 @@ nav a{
     padding: 10px 30px 10px 30px;
     border: none;
     border-radius: 10px;
+    text-decoration: none;
+
 
 }
 .boton-tarjeta{
     color: white;
+    
 }
 .tarjeta a{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+
 }
 .card-1{
     background-image: url(imagenes/Implementing.png);
@@ -225,18 +239,14 @@ nav a{
 .card-3{
     background-image: url(imagenes/Training.png);
 }
-.imagen-clientes{
-    display: grid;
-    gap: 100px;
-    grid-template-columns: repeat(10, 1fr);
-}
-.clientes h2{
+.clientes h2 {
     font-family: 'itc_avant_garde_gothic_demiRg';
     color: #002060;
     font-size: 40px;
     text-align: center;
 }
-.clientes p{
+
+.clientes p {
     color: black;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding-top: 6px;
@@ -245,14 +255,66 @@ nav a{
     margin-bottom: 30px;
     text-align: center;
 }
-.imagen-clientes{
+
+/* Contenedor principal */
+.clientes {
+    width: 100%; 
+    max-width: 1200px; /* Ajusta el tamaño máximo del slider */
+    margin: 0 auto; 
+    padding: 20px 0; 
+    overflow: hidden; 
+}
+
+/* Contenedor de diapositivas */
+.swiper-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Estilo para cada diapositiva */
+.swiper-slide {
+    max-width: 300px; /* Tamaño máximo de cada diapositiva */
+    text-align: center; 
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.primer-comentario img{
-    width: 300px;
-    height: 300px;
+
+/* Imagen dentro de la diapositiva */
+.swiper-slide img {
+    width: 80%; /* Tamaño relativo para adaptarse al contenedor */
+    height: auto; /* Mantener proporciones */
+    border-radius: 15px; /* Bordes redondeados */
+    object-fit: cover; /* Ajustar imagen al contenedor */
 }
+
+/* Paginación */
+.swiper-pagination-bullet {
+    background-color: #000; 
+    opacity: 0.7; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #007bff; 
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .swiper-slide {
+        max-width: 250px; /* Ajusta el tamaño en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        max-width: 200px; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+}
+
 
 .boton-tarjeta a{
     color: #78206E;
