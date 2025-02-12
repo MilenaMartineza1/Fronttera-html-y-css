@@ -1,30 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.clientes', {
-        loop: true, 
-        spaceBetween: 100, 
-        
+    let swiper = new Swiper('.clientes', {
+        loop: false,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+
         pagination: {
             el: '.swiper-pagination',
-            clickable: true, 
-            dynamicBullets: true, 
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            clickable: true,
+            dynamicBullets: true,
         },
 
-        breakpoints:{
-            0: {
-                slidesPerView: 1
+        centeredSlides: false, 
+        watchOverflow: true, 
+        preventClicks: false,
+
+        on: {
+            init: function () {
+                this.update(); 
             },
-            768: {
-                slidesPerView: 2
+            resize: function () {
+                this.update(); 
             },
-            1024: {
-                slidesPerView: 3
-            },
+            slideChange: function () {
+                this.update(); 
+            }
         }
     });
-
-    
 });
